@@ -47,7 +47,7 @@ module.exports = {
     "no-func-assign": 2,//禁止重复的函数声明
     "no-dupe-keys": 2,//在创建对象字面量时不允许键重复 {a:1,a:1}
     "no-alert": 2,//禁止使用alert confirm prompt
-    "no-console": 1,
+    "no-console": 0,
     "quote-props": ["warn", "consistent-as-needed"],
     "no-return-assign": 0,
     "comma-dangle": [2, "never"]//对象字面量项尾不能有逗号
