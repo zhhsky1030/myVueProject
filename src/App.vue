@@ -1,13 +1,17 @@
 <style scoped src="../public/style.css"/>
 <template>
   <div id="app">
-    <img src="./assets/logo.png" alt="">
+    <Header/>
+    <!--<img src="./assets/logo.png" alt="">-->
     <router-view/>
   </div>
 </template>
 
 <script>
+  import Header from "./business/header/index";
+
   export default {
-    name: "App"
+    name: "App",
+    components: { Header }
   };
 </script>
