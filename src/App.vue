@@ -1,4 +1,3 @@
-<style scoped src="../public/style.css"/>
 <template>
   <div id="app">
     <Header/>

@@ -20,7 +20,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   // cheap-module-eval-source-map is faster for development
   devtool: config.dev.devtool,
 
-  // these devServer options should be customized in /config/index.js
+  // webpack-dev-server 相关配置 相关路径 ./config/index.js
   devServer: {
     clientLogLevel: "warning",
     historyApiFallback: {
@@ -28,12 +28,13 @@ const devWebpackConfig = merge(baseWebpackConfig, {
         { from: /.*/, to: path.posix.join(config.dev.assetsPublicPath, "index.html") },
       ],
     },
-    hot: true,
+    hot: true, //热加载
     contentBase: false, // since we use CopyWebpackPlugin.
     compress: true,
-    host: HOST || config.dev.host,
-    port: PORT || config.dev.port,
-    open: config.dev.autoOpenBrowser,
+    https: false, //false关闭https，true为开启
+    host: HOST || config.dev.host, //ip地址
+    port: PORT || config.dev.port, //端口
+    open: config.dev.autoOpenBrowser, //自动打开浏览器
     overlay: config.dev.errorOverlay
       ? { warnings: false, errors: true }
       : false,

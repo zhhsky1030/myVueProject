@@ -11,14 +11,17 @@ export default {
       path: "AFirstDemo",
       name: "AFirstDemo",
       components: {
-        left: Left,
+        leftMenu: Left,
         right: AFirstDemo
       }
     },
     {
       path: "IfElseDemo",
       name: "IfElseDemo",
-      component: IfElseDemo
+      components: {
+        leftMenu: Left,
+        right: IfElseDemo
+      }
     }
   ]
 };

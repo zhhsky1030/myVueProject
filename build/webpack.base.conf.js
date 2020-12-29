@@ -25,8 +25,10 @@ module.exports = {
     app: "./src/main.js"
   },
   output: {
+    //当运行 vue-cli-service build 时生成的生产环境构建文件的目录
     path: config.build.assetsRoot,
     filename: "[name].js",
+    //部署应用包时的基本 URL
     publicPath: process.env.NODE_ENV === "production"
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath
@@ -45,10 +47,6 @@ module.exports = {
         test: /\.vue$/,
         loader: "vue-loader",
         options: vueLoaderConfig
-      },
-      {
-        test: /\.less$/,
-        loader: "style-loader!css-loader!less-loader",
       },
       {
         test: /\.js$/,

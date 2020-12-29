@@ -15,7 +15,7 @@
   import menuList from "./menuList";
 
   export default {
-    name: "Left",
+    name: "LeftMenu",
     data () {
       return {
         menuList
