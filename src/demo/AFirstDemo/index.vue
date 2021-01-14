@@ -5,7 +5,7 @@
       <p>if 语法块区域</p>
       <p v-if="ifElse">此时属性值为true</p>
       <p v-else>此时属性值为false</p>
-      <a-button type="primary" v-on:click="changeIfElse">点一下 就切换></a-button>
+      <Button type="primary" v-on:click="changeIfElse">点一下 就切换></Button>
     </div>
     <div>
       <p>for 语法块区域</p>
@@ -16,7 +16,7 @@
       </ul>
     </div>
     <div>
-      <a-input placeholder="edit me" v-model="formData.message"/>
+      <Input placeholder="edit me" v-model="formData.message"/>
       <p>Message is: {{ formData.message }}</p>
     </div>
   </div>
@@ -28,8 +28,8 @@
   export default {
     name: "AFirstDemo",
     components: {
-      AButton: Button,
-      AInput: Input
+      Button: Button,
+      Input: Input
     },
     data () {
       return {
