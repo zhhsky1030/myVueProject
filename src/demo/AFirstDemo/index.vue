@@ -1,6 +1,10 @@
 <template>
   <div>
-    {{ text }}
+    {{text}}
+    <iframe
+        class="videoClass"
+        src="//player.bilibili.com/player.html?bvid=1QK41137VC&page=2&high_quality=1"
+        allowfullscreen/>
     <div>
       <p>if 语法块区域</p>
       <p v-if="ifElse">此时属性值为true</p>
@@ -10,14 +14,14 @@
     <div>
       <p>for 语法块区域</p>
       <ul v-for="(item,i) in detail" v-bind:key="i">
-        <li>{{ item.sex }}</li>
-        <li>{{ item.like }}</li>
-        <li>{{ item.age }}</li>
+        <li>{{item.sex}}</li>
+        <li>{{item.like}}</li>
+        <li>{{item.age}}</li>
       </ul>
     </div>
     <div>
-      <Input placeholder="edit me" v-model="formData.message"/>
-      <p>Message is: {{ formData.message }}</p>
+      <label><Input placeholder="edit me" v-model="formData.message"/></label>
+      <p>Message is: {{formData.message}}</p>
     </div>
   </div>
 </template>
@@ -63,6 +67,10 @@
   };
 </script>
 
-<style scoped>
-
+<style scoped lang="less">
+.videoClass {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
 </style>

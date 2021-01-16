@@ -7,7 +7,7 @@
         <Ant-menu
             theme="dark"
             mode="horizontal"
-            :default-selected-keys="['2']"
+            :default-selected-keys="['1']"
             :style="{ lineHeight: '64px' }"
         >
           <Ant-menu-item key="1">

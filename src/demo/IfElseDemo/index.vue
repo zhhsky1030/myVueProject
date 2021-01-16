@@ -18,7 +18,7 @@
         <input v-model="inputBind2"/>
         <button v-on:click="getInputStr(inputBind2)">切换判断状态</button>
         <template v-if="level2==='A'">
-          <p>诶嘿，我判断这个值是A，但我只用了一个p标签</p>
+          <p>诶嘿，我判断这个值是A，但我只用了一个p标签</p>x
         </template>
         <template v-else-if="level2==='B'">
           <p>诶嘿，我判断这个值是B，但我只用了一个p标签</p>

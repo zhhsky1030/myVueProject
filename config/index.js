@@ -9,7 +9,22 @@ module.exports = {
     // Paths
     assetsSubDirectory: "static",
     assetsPublicPath: "/",
-    proxyTable: {},
+    proxyTable: {
+      '/testIp': {
+        target: 'http://197.82.15.15:8088',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/testIp': ''
+        }
+      },
+      '/elseIp': {
+        target: 'http://182.83.19.15:8080',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/esleIp': ''
+        }
+      },
+    },
 
     // Various Dev Server settings
     host: "localhost", // can be overwritten by process.env.HOST

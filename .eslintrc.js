@@ -58,6 +58,12 @@ module.exports = {
       "rules":{
         "indent":"off"
       }
+    },
+    {
+      "files":["*.js"],
+      "rules":{
+        "vue/script-indent":"off"
+      }
     }
   ]
 };
