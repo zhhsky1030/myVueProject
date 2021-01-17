@@ -1,10 +1,6 @@
 <template>
   <div>
     {{text}}
-    <iframe
-        class="videoClass"
-        src="//player.bilibili.com/player.html?bvid=1QK41137VC&page=2&high_quality=1"
-        allowfullscreen/>
     <div>
       <p>if 语法块区域</p>
       <p v-if="ifElse">此时属性值为true</p>
@@ -66,11 +62,3 @@
     }
   };
 </script>
-
-<style scoped lang="less">
-.videoClass {
-  border: none;
-  width: 100%;
-  height: 100%;
-}
-</style>

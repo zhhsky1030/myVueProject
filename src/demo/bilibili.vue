@@ -1,5 +1,9 @@
 <template>
   <div>
+    <iframe
+        class="videoClass"
+        src="//player.bilibili.com/player.html?bvid=1QK41137VC&page=2&high_quality=1"
+        allowfullscreen/>
     <table border="1">
       <tr>
         <th>key</th>
@@ -58,6 +62,10 @@
   };
 </script>
 
-<style scoped>
-
+<style scoped lang="less">
+.videoClass {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
 </style>

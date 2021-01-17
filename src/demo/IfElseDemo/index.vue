@@ -3,6 +3,7 @@
     <h1>IfElseDemo</h1>
     <p>vue v-if的进阶实例</p>
     <div class="practiceBox">
+      <div v-html="aa"></div>
       <div class="itemBox">
         <h4>在 &lt;template&gt; 元素上使用 v-if 条件渲染分组</h4>
         <button v-on:click="changeFlag('level1')">切换判断状态</button>
@@ -86,7 +87,8 @@
         level4: true,
         level5: true,
         level6: true,
-        level7: true
+        level7: true,
+        aa: "<p>level2</p>"
       };
     },
     methods: {
