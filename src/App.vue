@@ -11,7 +11,7 @@
             :style="{ lineHeight: '64px' }"
         >
           <Ant-menu-item key="1">
-            nav 1
+            博客（VUE）
           </Ant-menu-item>
           <Ant-menu-item key="2">
             nav 2
