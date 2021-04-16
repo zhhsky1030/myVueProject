@@ -26,10 +26,10 @@ if (exec('git pull').code !== 0) {
   echo('Error: Git pull failed');
   exit(1);
 }
-if (exec('git add .').code !== 0) {
-  echo('Error: Git add failed');
-  exit(1);
-}
+// if (exec('git add .').code !== 0) {
+//   echo('Error: Git add failed');
+//   exit(1);
+// }
 if (exec(`git commit -am "${name}"`).code !== 0) {
   echo('Error: Git commit failed');
   exit(1);
